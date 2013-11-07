@@ -1,0 +1,5 @@
+#010_author.yml
+Author:
+  GeekGaming: { name: GeekGaming, desc: I upload gameplays, slug: geekgaming }
+  PopularBand: { name: popularSinger, desc: BUY OUR LAST ALBUM ON iTUNES!!!!, slug: popularsinger }
+  CrazyRussian: { name: CrazyRussian, desc: Russia is different, slug: crazyrussian }

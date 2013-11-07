@@ -1,0 +1,5 @@
+#020_category.yml
+Category:
+  Music:  { name: Music, desc: Watch the latest gigs and video clips from your favourite bands and singers, slug: music }
+  Gaming: { name: Gaming, desc: Watch the most uncredible speedruns and reviews from your favourite players, slug: gaming }
+  Humour: { name: Humour, desc: Have a nice time watching some funny videos, slug: humour }

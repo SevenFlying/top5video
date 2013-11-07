@@ -1,0 +1,26 @@
+#config/schema.yml
+propel:
+  author:
+      id:           ~
+      name:         { type: varchar(255), required: true, index: unique }
+      desc:         { type: longvarchar, required: true }
+      slug:         { type: varchar(255), required: true, index: unique }
+  category:
+      id:           ~
+      name:         { type: varchar(255), required: true, index: unique }
+      desc:         { type: longvarchar, required: true }
+      slug:         { type: varchar(255), required: true, index: unique }
+  video:
+      id:           ~
+      author_id:    { type: integer, foreignTable: author, foreignReference: id, required: true }
+      category_id:  { type: integer, foreignTable: category, foreignReference: id, required: true}
+      title:        { type: varchar(255), required: true}
+      desc:         { type: longvarchar, required: true }
+      upload_date:  { type: date, required: true }
+      url:          { type: varchar(255), required: true }
+      slug:         { type: varchar(255), required: true, index: unique }
+  score:
+      id:           ~
+      video_id:     { type: integer, foreignTable: video, foreignReference: id, required: true }
+      stars:        { type: integer, required: true }
+      

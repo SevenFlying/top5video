@@ -1,0 +1,43 @@
+#030_video.yml
+Video:
+  MarioSpeedRun:
+    author_id: GeekGaming
+    category_id: Gaming
+    title: Super Mario Brosh speed Run
+    desc: Super Mario Brosh speed Run
+    upload_date: 1-11-2013
+    url: http://www.youtube.com/watch?v=kcmKPmj9yeE
+    slug: mariospeedrun
+  DarkSoulsSpeedRun:
+    author_id:   GeekGaming
+    category_id: Gaming
+    title: Dark Souls speed Run
+    desc: Dark Souls Brosh speed Run
+    upload_date: 1-08-2013
+    url: http://www.youtube.com/watch?v=JhOvMPRWey0
+    slug: darksoulsspeedrun
+  PokemonSpeedRun:
+    author_id:   GeekGaming
+    category_id: Gaming
+    title: Pokemon speed Run
+    desc: Pokemon speed Run
+    upload_date: 1-08-2012
+    url: http://www.youtube.com/watch?v=MYJES3LXkxI
+    slug: pokemonspeedrun
+  UndisclosedDesires:
+    author_id:   PopularBand
+    category_id: Music
+    title: Muse Undisclosed Desires
+    desc: Undisclosed Desires
+    upload_date: 4-11-2009
+    url: http://www.youtube.com/watch?v=R8OOWcsFj0U
+    slug: museud
+  CrazyRussians1:
+    author_id:   CrazyRussian
+    category_id: Humour
+    title: Crazy Russians Best Compilation
+    desc: Crazy Russians Best Compilation
+    upload_date: 21-09-2013
+    url: http://www.youtube.com/watch?v=C1WTmfYN-ZY
+    slug: cr1
+  

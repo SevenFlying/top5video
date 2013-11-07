@@ -1,0 +1,18 @@
+#040_score.yml
+Score:
+  sc1:
+    video_id: MarioSpeedRun
+    stars: 1
+  sc2:
+    video_id: DarkSoulsSpeedRun
+    stars: 2
+  sc3:
+    video_id: PokemonSpeedRun
+    stars: 3
+  sc4:
+    video_id: UndisclosedDesires
+    stars: 4 
+  sc5:
+    video_id: CrazyRussians1
+    stars: 5
+    
