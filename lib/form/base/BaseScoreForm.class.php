@@ -17,13 +17,19 @@ abstract class BaseScoreForm extends BaseFormPropel
       'id'       => new sfWidgetFormInputHidden(),
       'video_id' => new sfWidgetFormPropelChoice(array('model' => 'Video', 'add_empty' => false)),
       'stars'    => new sfWidgetFormInputText(),
+      'slug'     => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
       'id'       => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
       'video_id' => new sfValidatorPropelChoice(array('model' => 'Video', 'column' => 'id')),
       'stars'    => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647)),
+      'slug'     => new sfValidatorString(array('max_length' => 255)),
     ));
+
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorPropelUnique(array('model' => 'Score', 'column' => array('slug')))
+    );
 
     $this->widgetSchema->setNameFormat('score[%s]');
 

@@ -17,5 +17,9 @@
  * @package    lib.model
  */
 class Video extends BaseVideo {
-     public function __toString() { return $this->getTitle(); } 
+     public function __toString() { return $this->getTitle(); }
+     public function setName($name) {
+        parent::setName($name);
+        $this->setSlug(TodoTop5Video::slugify($name));
+    }
 } // Video

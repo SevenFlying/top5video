@@ -5,6 +5,21 @@
 homepage:
   url:   /
   param: { module: video, action: index }
+author:
+  url:   /author/:slug
+  class: sfPropelRoute
+  param: { module: author, action: show }
+  options: { model: Author, type: object}
+category:
+  url:   /category/:slug
+  class: sfPropelRoute
+  param: { module: category, action: show }
+  options: { model: Category, type: object}
+score:
+  url:   /score/:slug
+  class: sfPropelRoute
+  param: { module: score, action: show }
+  options: { model: Score, type: object}
 
 # generic rules
 # please, remove them by adding more specific rules

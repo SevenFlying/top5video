@@ -3,16 +3,21 @@ Score:
   sc1:
     video_id: MarioSpeedRun
     stars: 1
+    slug: onestar
   sc2:
     video_id: DarkSoulsSpeedRun
     stars: 2
+    slug: twostars
   sc3:
     video_id: PokemonSpeedRun
     stars: 3
+    slug: threestars
   sc4:
     video_id: UndisclosedDesires
-    stars: 4 
+    stars: 4
+    slug: fourstars
   sc5:
     video_id: CrazyRussians1
     stars: 5
+    slug: fivestars
     

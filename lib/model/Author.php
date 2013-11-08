@@ -18,5 +18,9 @@
  */
 class Author extends BaseAuthor {
 
-     public function __toString() { return $this->getName(); } 
+    public function __toString() { return $this->getName(); }
+    public function setName($name) {
+        parent::setName($name);
+        $this->setSlug(TodoTop5Video::slugify($name));
+    } 
 } // Author

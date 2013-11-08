@@ -17,5 +17,9 @@
  * @package    lib.model
  */
 class Score extends BaseScore {
-
+    public function setName($name) {
+        parent::setName($name);
+        $this->setSlug(TodoTop5Video::slugify($name));
+    }
+    
 } // Score
