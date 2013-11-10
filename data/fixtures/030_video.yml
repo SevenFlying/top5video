@@ -40,4 +40,83 @@ Video:
     upload_date: 21-09-2013
     url: http://www.youtube.com/watch?v=C1WTmfYN-ZY
     slug: cr1
-  
+  MJ_SC:
+    author_id: PopularBand
+    category_id: Music
+    title: MJ - Smooth Criminal
+    desc: Haciendo lo que mejor sabe hacer.
+    upload_date: 2013-11-07
+    url: http://www.youtube.com/watch?v=ceU4ANZKdOM
+    slug: MJ_SC
+  mtv_mj:
+    author_id: PopularBand
+    category_id: Music
+    title: Michael Jackson MTV Performance
+    desc: One of the best performances that MJ has done. Amazing!!
+    upload_date: 2012-10-01
+    url: http://www.youtube.com/watch?v=GfpSlDl-aKM
+    slug: mtv_mj
+  savPRyan:
+    author_id:   GeekGaming
+    category_id: Gaming
+    title: Saving Private Ryan
+    desc: An impressive trailer from Saving Private Ryan. Also available in game. Amazing!
+    upload_date: 2010-07-09
+    url: http://www.youtube.com/watch?v=zwhP5b4tD6g
+    slug: savPRyan
+  ARMAIIOA_gameplay:
+    author_id:   GeekGaming
+    category_id: Gaming
+    title: Arma II OA : Gameplay
+    desc: A gameplay on ArmA II OA. It worth every penny. That's for sure!!!
+    upload_date: 2013-09-17
+    url: http://www.youtube.com/watch?v=krLtYiChXS8
+    slug: ARMAIIOA_gameplay
+  wipeoutBestMoments:
+    author_id:   CrazyRussian
+    category_id: Humour
+    title: Wipeout Best Moments
+    desc: Wooow!!! These are the best moments of WipeOut TVProgram. Hahaha, so hilarious!
+    upload_date: 2013-01-07
+    url: http://www.youtube.com/watch?v=MqGh1sTpZPg
+    slug: wipeoutBestMoments
+  wipeout2:
+    author_id:   CrazyRussian
+    category_id: Humour
+    title: WipeOut 2 Season 4
+    desc: The best funny moments from season 4 of WipeOut
+    upload_date: 2013-05-11
+    url: http://www.youtube.com/watch?v=f8V5RKN4PNY
+    slug: wipeout2
+  justinTimb_mirrors:
+    author_id: PopularBand
+    category_id: Music
+    title: Justin Timberlake - Mirrors
+    desc: I don't have words for this song. Incredible! Loveable!
+    upload_date: 2012-12-31
+    url: http://www.youtube.com/watch?v=uuZE_IRwLNI
+    slug: justinTimb_mirrors
+  daddyLimbo:
+    author_id: PopularBand
+    category_id: Music
+    title: Daddy Yankee Limbo
+    desc: Remembering disco moments. The more you hear this song, the more happy you are. Yes!
+    upload_date: 2011-03-03
+    url: http://www.youtube.com/watch?v=6BTjG-dhf5s
+    slug: daddyLimbo
+  portal_short:
+    author_id:   GeekGaming
+    category_id: Gaming
+    title: Portal - No Escape
+    desc: A short film about Portal game. More than curious.
+    upload_date: 2009-01-28
+    url: http://www.youtube.com/watch?v=4drucg1A6Xk
+    slug: portal_short
+  commandos2_review:
+    author_id:   GeekGaming
+    category_id: Gaming
+    title: Commandos 2 - Pc Game Review
+    desc: Review of the game Commandos 2. Buy it right now!!
+    upload_date: 2013-10-29
+    url: http://www.youtube.com/watch?v=yl3kIx8ckxM
+    slug: commandos2_review  
