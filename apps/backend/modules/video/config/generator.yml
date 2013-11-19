@@ -1,0 +1,27 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Video
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Video
+    plural:                Videos
+    route_prefix:          video
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Videos Management
+        sort: [title, desc]
+        max_per_page: 20
+        display: [=id, =category_id, =author_id, =title, =url]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Editing %%title%%
+      new:
+        title: New Video

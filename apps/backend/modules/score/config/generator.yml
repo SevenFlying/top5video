@@ -1,0 +1,24 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Score
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Score
+    plural:                Scores
+    route_prefix:          score
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Score Management
+      filter:  ~
+      form:    ~
+      edit:
+        title: Editing %%name%%
+      new:
+        title: New Author
