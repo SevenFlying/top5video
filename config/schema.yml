@@ -23,5 +23,5 @@ propel:
       id:           ~
       video_id:     { type: integer, foreignTable: video, foreignReference: id, required: true }
       stars:        { type: integer, required: true }
-      slug:         { type: varchar(255), required: true, index: unique }
+      
       

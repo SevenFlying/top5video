@@ -14,13 +14,11 @@ abstract class BaseScoreFormFilter extends BaseFormFilterPropel
     $this->setWidgets(array(
       'video_id' => new sfWidgetFormPropelChoice(array('model' => 'Video', 'add_empty' => true)),
       'stars'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'slug'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
     ));
 
     $this->setValidators(array(
       'video_id' => new sfValidatorPropelChoice(array('required' => false, 'model' => 'Video', 'column' => 'id')),
       'stars'    => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
-      'slug'     => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('score_filters[%s]');
@@ -41,7 +39,6 @@ abstract class BaseScoreFormFilter extends BaseFormFilterPropel
       'id'       => 'Number',
       'video_id' => 'ForeignKey',
       'stars'    => 'Number',
-      'slug'     => 'Text',
     );
   }
 }

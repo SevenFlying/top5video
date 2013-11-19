@@ -3,60 +3,46 @@ Score:
   sc1:
     video_id: MarioSpeedRun
     stars: 1
-    slug: onestar
   sc2:
     video_id: DarkSoulsSpeedRun
     stars: 2
-    slug: twostars
   sc3:
     video_id: PokemonSpeedRun
     stars: 3
-    slug: threestars
   sc4:
     video_id: UndisclosedDesires
     stars: 4
-    slug: fourstars
   sc5:
     video_id: CrazyRussians1
     stars: 5
-    slug: fivestars
   sc6:
     video_id: MJ_SC
     stars: 4
-    slug: fourstars
   sc7:
     video_id: mtv_mj
     stars: 3
-    slug: threestars
   sc8:
     video_id: savPRyan
     stars: 2
-    slug: twostars
   sc9:
     video_id: ARMAIIOA_gameplay
     stars: 5
-    slug: fivestars
   sc10:
     video_id: wipeoutBestMoments
     stars: 2
-    slug: twostars
   sc11:
     video_id: wipeout2
     stars: 2
-    slug: twostars
   sc12:
     video_id: justinTimb_mirrors
     stars: 4
-    slug: fourstars
   sc13:
     video_id: daddyLimbo
     stars: 5
-    slug: fivestars
   sc14:
     video_id: portal_short
     stars: 1
-    slug: onestar
   sc15:
     video_id: commandos2_review
     stars: 1
-    slug: onestar
+    
