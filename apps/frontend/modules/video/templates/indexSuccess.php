@@ -1,15 +1,3 @@
-<?php foreach ($Videos as $Video): ?>
- <h1><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>"><?php echo $Video->getTitle() ?></a></h1>
- <div class="descr"><?php echo $Video->getDesc() ?> || Category: <?php echo $Video->getCategory() ?></div>
- 
- <p><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>">View it...</a></p>
- <?php endforeach; ?>
-
-
-
-
-
-<!--  Lo que habia antes: 
 <h1>Videos List</h1>
 
 <table>
@@ -26,21 +14,19 @@
     </tr>
   </thead>
   <tbody>
-    <?php // foreach ($Videos as $Video): ?>
+    <?php foreach ($Videos as $Video): ?>
     <tr>
-      <td><a href="<?php // echo url_for('video/show?id='.$Video->getId()) ?>"><?php // echo $Video->getId() ?></a></td>
-      <td><?php // echo $Video->getAuthorId() ?></td>
-      <td><?php // echo $Video->getCategoryId() ?></td>
-      <td><?php // echo $Video->getTitle() ?></td>
-      <td><?php // echo $Video->getDesc() ?></td>
-      <td><?php // echo $Video->getUploadDate() ?></td>
-      <td><?php // echo $Video->getUrl() ?></td>
-      <td><?php // echo $Video->getSlug() ?></td>
+      <td><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>"><?php echo $Video->getId() ?></a></td>
+      <td><?php echo $Video->getAuthorId() ?></td>
+      <td><?php echo $Video->getCategoryId() ?></td>
+      <td><?php echo $Video->getTitle() ?></td>
+      <td><?php echo $Video->getDesc() ?></td>
+      <td><?php echo $Video->getUploadDate() ?></td>
+      <td><?php echo $Video->getUrl() ?></td>
+      <td><?php echo $Video->getSlug() ?></td>
     </tr>
-    <?php //endforeach; ?>
+    <?php endforeach; ?>
   </tbody>
 </table>
 
-  <a href="<?php // echo url_for('video/new') ?>">New</a>
-  
-  -->
+  <a href="<?php echo url_for('video/new') ?>">New</a>

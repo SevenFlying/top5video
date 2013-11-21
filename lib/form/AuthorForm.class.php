@@ -11,5 +11,8 @@ class AuthorForm extends BaseAuthorForm
 {
   public function configure()
   {
+    unset(
+        $this['slug']
+        );
   }
 }
