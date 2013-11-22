@@ -11,5 +11,8 @@ class CategoryForm extends BaseCategoryForm
 {
   public function configure()
   {
+    unset(
+        $this['slug']
+        );
   }
 }

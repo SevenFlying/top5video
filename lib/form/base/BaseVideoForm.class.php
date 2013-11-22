@@ -31,7 +31,7 @@ abstract class BaseVideoForm extends BaseFormPropel
       'title'       => new sfValidatorString(array('max_length' => 255)),
       'desc'        => new sfValidatorString(),
       'upload_date' => new sfValidatorDate(),
-      'url'         => new sfValidatorString(array('max_length' => 255)),
+      'url'         => new sfValidatorUrl(),
       'slug'        => new sfValidatorString(array('max_length' => 255)),
     ));
 
