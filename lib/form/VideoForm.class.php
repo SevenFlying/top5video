@@ -22,9 +22,12 @@ class VideoForm extends BaseVideoForm
     $video = new Video();
     $this->form = new VideoForm($video);
     $schema = $this->form->getWidgetSchema();
-    $this->form->setWidgetSchema($schema);
     
     date_default_timezone_set('Europe/Madrid');
     $schema['upload_date'] = date('m/d/Y h:i:s a');
+    
+    $this->form->setWidgetSchema($schema);
+    
+    
   }
 }
