@@ -1,6 +1,6 @@
 <?php use_helper('Text') ?>
  <h1><?php echo $Video->getTitle() ?></h1>
- <div class="descr"><?php echo $Video->getUploadDate() ?> by <?php echo $Video->getAuthorId() ?> on <?php echo $Video->getCategoryId() ?></div>
+ <div class="descr"><?php echo $Video->getUploadDate() ?> by <?php echo $Video->getAuthor() ?> on <?php echo $Video->getCategory() ?></div>
  
  <!-- Lo de poner foto (nos interesa?):
  <?php // if ($Video->getPhoto()): ?>
@@ -13,11 +13,14 @@
  
  <?php // endif; ?>
  -->
- <p><?php echo simple_format_text($Video->getDesc()) ?></p>
- <iframe width="560" height="315" src="//www.youtube.com/embed/ceU4ANZKdOM?rel=0" frameborder="0" allowfullscreen></iframe>
- <p>Source: <a href="<?php echo $Video->getUrl() ?>"><?php echo $Video->getUrl() ?></a></p>
- <a href="<?php echo url_for('video/edit?id='.$Video->getId()) ?>">Edit</a>&nbsp; <a href="<?php echo url_for('video/index') ?>">Back to TOP 5</a>
+ <p><strong><?php echo simple_format_text($Video->getDesc()) ?></strong></p>
 
+ <iframe width="400" height="315" src="//www.youtube.com/embed/<?php echo substr($Video->getUrl(), 31);?>?rel=0" frameborder="0" allowfullscreen></iframe>
+ <p>Source: <a href="<?php echo $Video->getUrl() ?>"><?php echo $Video->getUrl() ?></a></p>
+ <br />
+ <br />
+ <a href="<?php echo url_for('video/edit?id='.$Video->getId()) ?>">Edit</a>&nbsp; <a href="<?php echo url_for('video/index') ?>">Back to TOP 5</a>
+<!-- //www.youtube.com/embed/ceU4ANZKdOM?rel=0 -->
 <!--  Lo que había antes:
 <table>
   <tbody>

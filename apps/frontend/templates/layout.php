@@ -25,21 +25,15 @@
 	</div>
 	<div class="main_right">
 		<div class="link_versions">
-			<div class="lbl">Languaje</div>
+			<div class="lbl">Language</div>
 			<span class="left">
-				<a href="<?php echo url_for('@homepage') ?>" class="g1" accesskey="n"><span>EN</span><br/>English</a>
+				<a href="#" class="g1" accesskey="n"><span>EN</span><br/>English</a>
 			</span>
 			<span class="right">
-				<a href="<?php echo url_for('@homepage') ?>" class="g2" accesskey="s"><span>ES</span><br/>Spanish</a>
+				<a href="#" class="g2" accesskey="s"><span>ES</span><br/>Spanish</a>
 			</span>
 		</div>
-		<div class="link_categories">
-			<div class="lbl">Categories</div>
-            <a href="/category/local"><span>Gaming</span></a>
-            <a href="/category/international"><span>Music</span></a>
-            <a href="/category/society"><span>Humour</span></a>
-			<div class="clearer"><span></span></div>
-		</div>
+		<?php include_partial('category/list', array('categories' => CategoryPeer::doSelect(new Criteria()))) ?>
 	</div>
 	<div class="footer">
 		<div class="left">&copy; <a href="<?php echo url_for('@homepage') ?>">TOP 5 Video</a> 2009. Template design by <a href="http://templates.arcsin.se">Arcsin</a></div>

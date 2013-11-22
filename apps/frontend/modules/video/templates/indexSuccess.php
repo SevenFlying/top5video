@@ -1,9 +1,10 @@
 <?php foreach ($Videos as $Video): ?>
  <h1><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>"><?php echo $Video->getTitle() ?></a></h1>
- <div class="descr"><?php echo $Video->getDesc() ?> || Category: <?php echo $Video->getCategory() ?></div>
+ <div class="descr"><strong><?php echo $Video->getDesc() ?></strong> || Category: <?php echo $Video->getCategory() ?> || Upload date: <?php echo $Video->getUploadDate() ?></div>
  
  <p><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>">View it...</a></p>
  <?php endforeach; ?>
+ <br />
 
 
 
