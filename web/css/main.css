@@ -115,6 +115,11 @@ div.link_versions a:hover,div.link_categories a:hover, .content a:hover, div.foo
 	overflow: hidden;
 	text-align: center;
 }
+.lbl2 {
+font: normal 0.5em "Lucida Sans Unicode",sans-serif;
+color: #FFF;
+
+}
 .link_versions a {
 	display: block;
 	height: 100px;

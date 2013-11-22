@@ -25,7 +25,7 @@
 	</div>
 	<div class="main_right">
 		<div class="link_versions">
-			<div class="lbl">Language</div>
+			<div class="lbl">Language<span class="lbl2"> (no implementado)</span></div>
 			<span class="left">
 				<a href="#" class="g1" accesskey="n"><span>EN</span><br/>English</a>
 			</span>
