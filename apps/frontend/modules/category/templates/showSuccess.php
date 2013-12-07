@@ -6,9 +6,9 @@ $criteria->addDescendingOrderByColumn(VideoPeer::UPLOAD_DATE);
 ?>
  <?php foreach ($category->getVideos($criteria, null) as $Video): ?>
  <h1><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>"><?php echo $Video->getTitle() ?></a></h1>
-  <div class="descr"><strong><?php echo $Video->getDesc() ?></strong> || Category: <?php echo $Video->getCategory() ?> || Upload date: <?php echo $Video->getUploadDate() ?></div>
+  <div class="descr"><strong><?php echo $Video->getDesc() ?></strong> || Category: <?php echo $Video->getCategory() ?> || Upload date: <span class="descr2"><?php echo $Video->getUploadDate() ?></span></div>
  
- <p><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>">View it...</a></p>
+ <p><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>"><span class="content2">View it...</span></a></p>
  <?php endforeach; ?>
  <?php else: ?> <br/>
  <p>There are <strong>no</strong> videos in this category. Sorry for that! ;-)</p>

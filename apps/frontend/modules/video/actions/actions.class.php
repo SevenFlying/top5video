@@ -11,6 +11,33 @@ class videoActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
+
+      /*
+    $criteria = new Criteria();
+    $criteria->addDescendingOrderByColumn(VideoPeer::UPLOAD_DATE);
+    $criteria->setLimit(sfConfig::get('app_max_videos_on_homepage'));
+    $this->Videos = VideoPeer::doSelect($criteria);
+    */
+    /*
+    $results= new Criteria();
+   // $results->addSelectColumn(ScorePeer::VIDEO_ID);
+    $results->addDescendingOrderByColumn(ScorePeer::STARS);
+    $r->Score VideoPeer::doSelect($results);
+    
+    
+    $c= new Criteria();
+    $c->add(VideoPeer::ID, $r, CRITERIA::IN);
+    $c->setLimit(sfConfig::get('app_max_videos_on_homepage'));
+    $this->Videos = VideoPeer::doSelect($c);
+    */
+  
+      /*
+  select * from video where id in(
+  SELECT video_id,
+FROM Score
+GROUP BY video_id
+ORDER BY AVG( stars ) DESC )*/
+  
     $this->Videos = VideoPeer::doSelect(new Criteria());
   }
 
@@ -18,6 +45,19 @@ class videoActions extends sfActions
   {
     $this->Video = VideoPeer::retrieveByPk($request->getParameter('id'));
     $this->forward404Unless($this->Video);
+    
+    //Esto es lo que se supone que hay que poner aqui para que funcione el 'pager':
+    // $this->video = $this->getRoute()->getObject();
+    // $criteria = new Criteria();
+    // $criteria->add(VideoPeer::id, $this->video->getId());
+    // $this->pager = new sfPropelPager(
+    // 'Video',
+    // sfConfig::get('app_max_videos_on_video') //Qué tabla estamos paginando, y cada cuantas entradas (conf. de app.yml)
+    // );
+    // $this->pager->setCriteria($criteria); // Qué criterio
+    // $this->pager->setPage($request->getParameter('page', 1)); // Qué página quiero ahora (parámetro page, o 1 para la primera vez)
+    // $this->pager->init(); // Inicializar el paginador
+    
   }
 
   public function executeNew(sfWebRequest $request)
