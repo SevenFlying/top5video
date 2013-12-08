@@ -1,7 +1,7 @@
 <?php 
 
     $c= new Criteria();
-    $c->setLimit(sfConfig::get('app_max_videos_on_homepage'));
+    $c->setLimit(sfConfig::get('app_max_videos_on_homepage')); //app_max_videos_on_homepage
     $c->addJoin(VideoPeer::ID, ScorePeer::VIDEO_ID);
     $c->addDescendingOrderByColumn(ScorePeer::STARS);
     $c->addDescendingOrderByColumn(VideoPeer::UPLOAD_DATE);
@@ -18,9 +18,9 @@
 
 <?php foreach ($Videos as $Video): ?>
  <h1><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>"><?php echo $Video->getTitle() ?></a></h1>
- <div class="descr"><strong><?php echo $Video->getDesc() ?></strong> || Category: <?php echo $Video->getCategory() ?> || Upload date: <span class="descr2"><?php echo $Video->getUploadDate() ?></span></div>
+ <div class="descr"><strong><?php echo $Video->getDesc() ?></strong> || <?php echo __("Category") ?>: <?php echo $Video->getCategory() ?> || <?php echo __("Upload date") ?>: <span class="descr2"><?php echo $Video->getUploadDate() ?></span></div>
  
- <p><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>"><span class="content2">View it...</span></a></p>
+ <p><a href="<?php echo url_for('video/show?id='.$Video->getId()) ?>"><span class="content2"><?php echo __("View it") ?>...</span></a></p>
  <?php endforeach; ?>
  <br />
 

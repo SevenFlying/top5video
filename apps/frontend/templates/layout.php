@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php use_javascript('script.js') ?>
+    <?php use_javascript('jquery.qtip-1.0.0-rc3.min.js') ?>
     <?php include_javascripts() ?>
 </head>
 <body>
@@ -16,20 +17,20 @@
 
     <div class="main_right">
 		<div class="link_versions">
-			<div class="lbl">Language</div>
+			<div class="lbl"><?php echo __("Language") ?></div>
 			<span class="left">
-				<a href="#" class="g1" accesskey="n"><span>EN</span></a>
+				<a href="<?php echo url_for('@homepage').'en' ?>" class="g1" accesskey="n"><span>EN</span></a>
 			</span>
 			<span class="right">
-				<a href="#" class="g2" accesskey="s"><span>ES</span></a>
+				<a href="<?php echo url_for('@homepage').'es' ?>" class="g2" accesskey="s"><span>ES</span></a>
 			</span>
 		</div>
 		<?php include_partial('category/list', array('categories' => CategoryPeer::doSelect(new Criteria()))) ?>
     </div>
 
     <div class="main_left">
-		<a href="<?php echo url_for('video/index') ?>" accesskey="1"><div id="img_home"></div></a>
-        <a href="<?php echo url_for('video/new') ?>" accesskey="2"><div id="img_upload"></div></a>		
+		<a href="<?php echo url_for('@homepage') ?>" accesskey="1"><img src="/images/home.png" alt="" id="img_home"></a>
+        <a href="<?php echo url_for('video/new') ?>" accesskey="2"><img src="/images/upload.png" alt="" id="img_upload"></a>		
 	</div>
 
     <div class="main_content"> 
@@ -46,7 +47,7 @@
     </div>  
     
 	<div class="footer">
-		<div class="left">&copy; <a href="<?php echo url_for('@homepage') ?>">TOP 5 Video</a> 2009. Template design by <a href="http://templates.arcsin.se">Arcsin (modified)</a></div>
+		<div class="left">&copy; <a href="<?php echo url_for('@homepage') ?>">TOP 5 Video</a> 2009. <?php echo __("Template design by") ?> <a href="http://templates.arcsin.se">Arcsin (<?php echo __("modified") ?>)</a></div>
 		<div class="right"><a href="http://jigsaw.w3.org/css-validator/check/referer">valid CSS</a> <a href="http://validator.w3.org/check?uri=referer">valid XHTML</a></div>
 	</div>
 </div>

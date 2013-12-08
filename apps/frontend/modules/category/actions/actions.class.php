@@ -15,8 +15,17 @@ class categoryActions extends sfActions
     public function executeShow(sfWebRequest $request) {
     $this->category = $this->getRoute()->getObject();
     
-    // El criterio de ordenacion (es decir, ordenacion por 'UploadDate', los mas recientes arriba y los mas antiguos abajo)
-    // se encuentra definido en el archivo "showSuccess.php" del modulo category.
+    $criteria = new Criteria();
+    $criteria->add(VideoPeer::CATEGORY_ID, $this->category->getId());  
+    $criteria->addDescendingOrderByColumn(VideoPeer::UPLOAD_DATE);  
+    
+    $this->pager = new sfPropelPager(
+        'Video', 
+        sfConfig::get('app_max_videos_on_each_category') //Qué tabla estamos paginando, y cada cuantas entradas (conf. de app.yml)
+    );
+    $this->pager->setCriteria($criteria); // Qué criterio
+    $this->pager->setPage($request->getParameter('page', 1)); // Qué página quiero ahora (parámetro page, o 1 para la primera vez)
+    $this->pager->init(); // Inicializar el paginador
   
     }
 }

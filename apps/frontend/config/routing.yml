@@ -2,9 +2,16 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 # default rules
+localized_homepage:
+  url: /:sf_culture
+  param: { module: video, action: index }
+  requeriments:
+    sf_culture: (?:en|es)
+
 homepage:
   url:   /
   param: { module: video, action: index }
+
 author:
   url:   /author/:slug
   class: sfPropelRoute
