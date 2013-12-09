@@ -26,6 +26,10 @@
 			</span>
 		</div>
 		<?php include_partial('category/list', array('categories' => CategoryPeer::doSelect(new Criteria()))) ?>
+        <a class="twitter-timeline"  href="https://twitter.com/Seven_Flying"  data-widget-id="410120016281882624">Tweets por @Seven_Flying</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
     </div>
 
     <div class="main_left">
