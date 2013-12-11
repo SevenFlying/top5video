@@ -13,7 +13,6 @@
 <body>
 
 <div class="main">
-<!-- Esto es para hacer el efecto GLOW <div class="div_invisible"></div> -->
 
     <div class="main_right">
 		<div class="link_versions">
@@ -26,25 +25,20 @@
 			</span>
 		</div>
 		<?php include_partial('category/list', array('categories' => CategoryPeer::doSelect(new Criteria()))) ?>
-        <a class="twitter-timeline"  href="https://twitter.com/Seven_Flying"  data-widget-id="410120016281882624">Tweets por @Seven_Flying</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
     </div>
 
     <div class="main_left">
-		<a href="<?php echo url_for('@homepage') ?>" accesskey="1"><img src="/images/home.png" alt="" id="img_home"></a>
-        <a href="<?php echo url_for('video/new') ?>" accesskey="2"><img src="/images/upload.png" alt="" id="img_upload"></a>		
+		<a href="<?php echo url_for('@homepage') ?>" accesskey="1" id="a_home"><img src="/images/home.png" alt="" id="img_home" /></a>
+        <a href="<?php echo url_for('video/new') ?>" accesskey="2" id="a_upload"><img src="/images/upload.png" alt="" id="img_upload" /></a>		
 	</div>
 
+    <a class="twitter-timeline"  href="https://twitter.com/Seven_Flying"  data-widget-id="410120016281882624">Tweets por @Seven_Flying</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
     <div class="main_content"> 
         <div class="header">
 			<h1><a href="<?php echo url_for('@homepage') ?>">TOP 5 Video</a></h1>
 		</div>
-		<!--<div class="link_menu">
-			<a href="<?php echo url_for('video/index') ?>" accesskey="1">Homepage</a>
-			<a href="<?php echo url_for('video/new') ?>" accesskey="2">Upload a VIDEO!</a>
-		</div>  -->
         <div class="content">
 			<?php echo $sf_content ?>
 		</div>

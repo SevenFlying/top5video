@@ -27,5 +27,5 @@ class categoryActions extends sfActions
     $this->pager->setPage($request->getParameter('page', 1)); // Qué página quiero ahora (parámetro page, o 1 para la primera vez)
     $this->pager->init(); // Inicializar el paginador
   
-    }
+    }  
 }

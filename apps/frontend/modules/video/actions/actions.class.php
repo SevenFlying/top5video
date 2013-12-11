@@ -59,6 +59,13 @@ ORDER BY AVG( stars ) DESC )*/
     // $this->pager->init(); // Inicializar el paginador
     
   }
+  
+  public function executeShowAjax(sfWebRequest $request) {
+    if ($request->isXmlHttpRequest()) {
+        $this->video = VideoPeer::retrieveByPk($request->getParameter('id'));
+        $this->forward404Unless($this->video);
+    }
+  } 
 
   public function executeNew(sfWebRequest $request)
   {
