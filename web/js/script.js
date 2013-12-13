@@ -50,7 +50,7 @@ $(document).ready(function() {
             if(id_img == 10) {heavyImage = new Image(); heavyImage.src = "/images/"+(1)+".jpg";} else {
                               heavyImage = new Image(); heavyImage.src = "/images/"+(id_img+1)+".jpg";}
             load_images();
-    }, 12000);
+    }, 40000);
   }
   load_images();
   // end Load background images
