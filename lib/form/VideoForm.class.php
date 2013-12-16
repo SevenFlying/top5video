@@ -10,13 +10,14 @@
 class VideoForm extends BaseVideoForm
 {
   public function configure()
-  {
+  {/*
     unset(
     $this['upload_date'],
     $this['slug']
-    );
+    );*/
   }
   
+  /*
   public function executeNew(sfWebRequest $request)
   {
     $video = new Video();
@@ -26,8 +27,8 @@ class VideoForm extends BaseVideoForm
     date_default_timezone_set('Europe/Madrid');
     $schema['upload_date'] = date('m/d/Y h:i:s a');
     
-    $this->form->setWidgetSchema($schema);
-    
-    
+    $this->form->setWidgetSchema($schema);    
   }
+  */
+  
 }

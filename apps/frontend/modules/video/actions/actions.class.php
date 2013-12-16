@@ -69,7 +69,33 @@ ORDER BY AVG( stars ) DESC )*/
 
   public function executeNew(sfWebRequest $request)
   {
-    $this->form = new VideoForm();
+    /*$this->form = new VideoForm();*/
+    
+    $video = new Video();
+ /*$criteria = new Criteria();
+ $criteria->add(AuthorPeer::NAME, sfConfig::get('app_anonymous_author'));
+ $authors = AuthorPeer::doSelect($criteria);
+ $news->setAuthor($authors[0]);
+ */
+ $video->setUploadDate(new DateTime('now'));
+ 
+ $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";	
+
+	$size = strlen( $chars );
+	for( $i = 0; $i < 10; $i++ ) {
+		$str .= $chars[ rand( 0, $size - 1 ) ];
+	}
+ $video->setSlug($str);
+ 
+ $this->form = new VideoForm($video);
+ 
+ $schema = $this->form->getWidgetSchema();
+ 
+ $schema['upload_date'] = new sfWidgetFormDate();
+ $schema['slug'] = new sfWidgetFormInputText();
+ $this->form->setWidgetSchema($schema);
+
+    
   }
 
   public function executeCreate(sfWebRequest $request)

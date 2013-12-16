@@ -48,6 +48,15 @@
           <?php echo $form['desc'] ?>
         </td>
       </tr>
+      
+      <tr>
+        <th class="td_class"><?php  echo $form['upload_date']->renderLabel() ?></th>
+        <td class="td_class">
+          <?php  echo $form['upload_date']->renderError() ?>
+          <?php  echo $form['upload_date'] ?>
+        </td>
+      </tr>
+      
       <tr>
         <th><?php echo $form['url']->renderLabel() ?></th>
         <td>
@@ -55,6 +64,15 @@
           <?php echo $form['url'] ?>
         </td>
       </tr>
+      
+      <tr>
+        <th class="td_class"><?php echo $form['slug']->renderLabel() ?></th>
+        <td class="td_class">
+          <?php echo $form['slug']->renderError() ?>
+          <?php echo $form['slug'] ?>
+        </td>
+      </tr>
+      
     </tbody>
   </table>
 </form>

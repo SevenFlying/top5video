@@ -69,7 +69,7 @@ $(document).ready(function() {
    },
    show: { delay: 200 }
   });
-  $("#img_upload").qtip({
+  $("#a_upload").qtip({
     content: 'UPLOAD/PUBLICAR',
     position: {
       corner: {

@@ -22,7 +22,7 @@ abstract class BaseScoreForm extends BaseFormPropel
     $this->setValidators(array(
       'id'       => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
       'video_id' => new sfValidatorPropelChoice(array('model' => 'Video', 'column' => 'id')),
-      'stars'    => new sfValidatorInteger(array('min' => 0, 'max' => 5)),
+      'stars'    => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647)),
     ));
 
     $this->widgetSchema->setNameFormat('score[%s]');

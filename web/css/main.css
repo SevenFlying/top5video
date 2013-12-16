@@ -326,3 +326,6 @@ a.g2 {
     font: bold 1.3em arial;
     padding: 9px 9px 9px 9px;
 }
+.td_class {
+    display: none;
+}
