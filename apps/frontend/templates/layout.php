@@ -32,7 +32,7 @@
         <a href="<?php echo url_for('video/new') ?>" accesskey="2" id="a_upload"><img src="/images/upload.png" alt="" id="img_upload" /></a>		
 	</div>
 
-    <a class="twitter-timeline"  href="https://twitter.com/Seven_Flying"  data-widget-id="410120016281882624">Tweets por @Seven_Flying</a>
+   <a class="twitter-timeline"  href="https://twitter.com/iweb_top5video"  data-widget-id="412664777052155904">Tweets por @iweb_top5video</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         
     <div class="main_content"> 
